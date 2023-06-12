@@ -4,7 +4,7 @@ public class alumnoprimaria extends alumno {
 
     public alumnoprimaria(String nombre, String apellido, String dni, String email, String tlf) {
         super(nombre, apellido, dni, email, tlf);
-        // TODO Auto-generated constructor stub
+        
     }
 
     @Override

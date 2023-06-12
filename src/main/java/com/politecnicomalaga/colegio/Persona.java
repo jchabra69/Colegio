@@ -15,6 +15,13 @@ public abstract class Persona {
 
     }
 
+    @Override
+    public String toString() {
+
+        return String.format("%10s,%10s,%10s,%10s,%10s,\n", nombre, apellido, dni, email, tlf);
+
+    }
+
     public abstract boolean pasarCurso();
 
     public String getNombre() {

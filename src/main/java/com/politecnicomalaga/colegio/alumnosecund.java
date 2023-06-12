@@ -12,6 +12,7 @@ public class alumnosecund extends alumno {
 
         float media = 0;
         float resultado = 0;
+        float suspenso = 0;
 
         // Voy a recorrer todo el array de notas
         for (int i = 0; i < misNotas.length; i++) {
@@ -23,9 +24,21 @@ public class alumnosecund extends alumno {
             // Y luego haré la media
             resultado = media / misNotas.length;
 
-        }
-        if (resultado > 3.5) {
+             // Si una nota es menor de 4
+             if (misNotas[i].getValorNota() < 4) {
 
+                suspenso++;
+                break;
+
+            }
+
+
+        }
+
+        // Si tiene solo 2 o menos suspensos y la media es más o igual a 5
+        if (suspenso <= 2 && media >= 5) {
+
+            // El alumno pasa
             return true;
 
         } else {
