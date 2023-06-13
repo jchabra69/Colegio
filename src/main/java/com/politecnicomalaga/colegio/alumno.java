@@ -2,6 +2,8 @@ package com.politecnicomalaga.colegio;
 
 public abstract class alumno extends Persona {
 
+    //Lecturas masivas
+    //Modificaciones
     protected Nota[] misNotas;
 
     public alumno(String nombre, String apellido, String dni, String email, String tlf) {

@@ -4,7 +4,7 @@ public class alumnosecund extends alumno {
 
     public alumnosecund(String nombre, String apellido, String dni, String email, String tlf) {
         super(nombre, apellido, dni, email, tlf);
-        // TODO Auto-generated constructor stub
+
     }
 
     @Override
@@ -24,14 +24,13 @@ public class alumnosecund extends alumno {
             // Y luego haré la media
             resultado = media / misNotas.length;
 
-             // Si una nota es menor de 4
-             if (misNotas[i].getValorNota() < 4) {
+            // Si una nota es menor de 4
+            if (misNotas[i].getValorNota() < 4) {
 
                 suspenso++;
                 break;
 
             }
-
 
         }
 

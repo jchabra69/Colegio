@@ -4,7 +4,7 @@ public class alumnoprimaria extends alumno {
 
     public alumnoprimaria(String nombre, String apellido, String dni, String email, String tlf) {
         super(nombre, apellido, dni, email, tlf);
-        
+
     }
 
     @Override
@@ -18,13 +18,13 @@ public class alumnoprimaria extends alumno {
 
             // Necesito calcular su media
             // Así que sumaré cada iteración
-            media += misNotas[i].getValorNota();
+            resultado += misNotas[i].getValorNota();
 
             // Y luego haré la media
-            resultado = media / misNotas.length;
+            media = resultado / misNotas.length;
 
         }
-        if (resultado > 3.5) {
+        if (media > 3.5) {
 
             return true;
 

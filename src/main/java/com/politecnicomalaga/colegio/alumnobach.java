@@ -24,14 +24,13 @@ public class alumnobach extends alumno {
             // Y luego haré la media
             resultado = media / misNotas.length;
 
-             // Si una nota es menor de 4
-             if (misNotas[i].getValorNota() < 4) {
+            // Si una nota es menor de 4
+            if (misNotas[i].getValorNota() < 4) {
 
                 suspenso++;
                 break;
 
             }
-
 
         }
 
